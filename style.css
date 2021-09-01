@@ -1,0 +1,267 @@
+@import url(//db.onlinewebfonts.com/c/827d075b1538829cc0db75696e4d5fa2?family=Speedee);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.logo img {
+  max-width: 100%;
+  width: 75px;
+}
+
+#custom-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 0;
+}
+
+#custom-nav ul li {
+  display: inline-block;
+  margin: 10px 11.5px;
+  list-style-type: none;
+  font-family: "Speedee";
+}
+
+#custom-nav ul li a {
+  color: #db0007;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* hamburger btn */
+
+.animated-icon1 {
+  width: 35px;
+  height: 10px;
+  position: relative;
+  bottom: 10px;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.animated-icon1 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+
+  /* border-radius: 9px; */
+  /* opacity: 1; */
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.animated-icon1 span {
+  background: #db0007;
+  padding: 0;
+  border: hidden;
+}
+
+.animated-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+.animated-icon1 span:nth-child(2) {
+  top: 9px;
+}
+
+.animated-icon1 span:nth-child(3) {
+  top: 18px;
+}
+
+.animated-icon1.open span:nth-child(1) {
+  top: 11px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.animated-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.animated-icon1.open span:nth-child(3) {
+  top: 11px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+button:focus {
+  outline: 0px !important;
+}
+
+/* carousel */
+
+#custom-indicator {
+  margin-bottom: 5px;
+}
+#custom-indicator li {
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  margin: 8px;
+  opacity: 100%;
+  background-color: white;
+  border: 2px solid white;
+}
+
+#custom-indicator .active {
+  border: 2px solid rgba(255, 0, 0, 0.329);
+  background-color: rgba(255, 0, 0, 0.671);
+}
+
+/* category */
+
+#category-layout {
+  padding: 0;
+  margin: 55px 0;
+  max-width: 1280px;
+}
+#category-row1 {
+  margin: 0;
+  justify-content: center;
+}
+.category {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.category-items {
+  margin: 25px 35px;
+  border-radius: 10%;
+  width: 100%;
+  max-width: 270px;
+  height: 100%;
+  max-height: 270px;
+  overflow: hidden;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.category-items img {
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease;
+  z-index: 0;
+}
+
+.category-items p {
+  font-family: "Speedee";
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  padding-left: 100px;
+  padding-top: 230px;
+  font-size: 16px;
+  z-index: 1;
+}
+
+#fam-text {
+  padding-left: 70px;
+}
+
+#phApp-txt {
+  padding-top: 210px;
+  padding-left: 35px;
+}
+
+.category-items img:hover {
+  transform: scale(1.2);
+}
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #ffbc0d;
+  flex-wrap: wrap;
+}
+
+.foot img,
+.foot ul {
+  margin: 50px;
+}
+
+.mcdo-logo {
+  max-width: 100%;
+  width: 100px;
+  margin: 30px 20px;
+}
+
+.app-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.app-btn img {
+  margin: 10px;
+  max-width: 100%;
+  width: 100px;
+}
+
+.foot ul li {
+  list-style: none;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.foot ul li a {
+  color: black;
+}
+
+.social ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.smedia-btn {
+  display: flex;
+  align-items: flex-start;
+}
+
+.smedia-btn .fab {
+  color: #db0007;
+  font-size: 30px;
+  margin: 0 15px;
+}
+
+@media only screen and (max-width: 980px) {
+  #custom-nav ul li a {
+    display: none;
+  }
+
+  #custom-nav ul {
+    justify-content: space-between;
+  }
+}
